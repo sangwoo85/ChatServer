@@ -1,0 +1,187 @@
+/* DesktopMessenger.css */
+
+/* 전체 컨테이너 */
+.messenger-container {
+    display: flex;
+    height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    color: #333;
+  }
+  
+  /* === 왼쪽 사이드바 === */
+  .sidebar {
+    width: 280px;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  
+  .sidebar-header {
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .search-box {
+    margin: 8px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .chat-list {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .chat-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .chat-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #999;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  .chat-info {
+    flex: 1;
+  }
+  
+  .chat-name {
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-size: 0.95rem;
+  }
+  
+  .chat-last-message {
+    color: #666;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
+    display: inline-block;
+  }
+  
+  .chat-time {
+    font-size: 0.75rem;
+    color: #999;
+    margin-left: auto;
+  }
+  
+  /* === 채팅창 영역 === */
+  .chat-window {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .chat-header .chat-avatar {
+    background-color: #5cb85c; /* 녹색 */
+    margin-right: 8px;
+  }
+  
+  .chat-header-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* === 메시지 영역 === */
+  .chat-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    display: flex;
+    margin-bottom: 12px;
+  }
+  
+  .message-left {
+    justify-content: flex-start;
+  }
+  
+  .message-right {
+    justify-content: flex-end;
+  }
+  
+  .message-content {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+  
+  .message-time {
+    text-align: right;
+    margin-top: 6px;
+    font-size: 0.75rem;
+    color: #999;
+  }
+  
+  /* 본인이 보낸 메시지 */
+  .message-right .message-content {
+    background-color: #dcf8c6;
+    border-color: #cce5b8;
+  }
+  
+  /* === 메시지 입력창 === */
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .chat-input button {
+    margin-left: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #5cb85c;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+  }
